@@ -1,0 +1,92 @@
+:root {
+    --cardColor:#eeef;
+    --textColor:#212121;
+    --bg:url('./assets/backbg.png')
+    
+
+}
+
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    background-image: var(--bg);
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    min-height: 100vh;
+       
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 50px;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    
+}
+
+.title h1 {
+    font-size: 6rem;
+}
+
+.title .month {
+    position: absolute;  
+    top:230px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    color: #fff;
+    
+
+}
+
+.card {
+background-color: var(--cardColor);
+width: 350px;
+padding: 20px;
+}
+
+.cards-collection {
+    display: flex;
+   
+    gap: 30px;
+  
+}
+
+.date {
+    display: flex;
+    gap: 15px;
+    font-size: 25px;
+}
+
+
+@media screen and (max-width:800px) {
+    body {
+        background-size:auto;
+      width: 100vw;
+      
+    }
+    .cards-collection {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 600px;
+    }
+}
