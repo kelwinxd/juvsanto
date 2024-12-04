@@ -1,11 +1,8 @@
 :root {
-    --cardColor:#eeef;
-    --textColor:#212121;
-    --bg:url('./assets/backbg.png')
-    
-
+    --cardColor: #eeef;
+    --textColor: #212121;
+    --bg: url('./assets/backbg.png');
 }
-
 
 html, body {
     height: 100%; 
@@ -19,11 +16,11 @@ body {
     background-position: center; 
     background-size: cover; 
     min-height: 100vh;
-       
 }
 
 .container {
-    width: 800px;
+    max-width: 800px; /* Torna responsivo */
+    width: 100%; /* Ajusta ao tamanho da tela */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -37,7 +34,6 @@ body {
 .title {
     text-align: center;
     position: relative;
-    
 }
 
 .title h1 {
@@ -46,26 +42,25 @@ body {
 
 .title .month {
     position: absolute;  
-    top:230px;
+    top: 230px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 4rem;
     color: #fff;
-    
-
 }
 
 .card {
-background-color: var(--cardColor);
-width: 350px;
-padding: 20px;
+    background-color: var(--cardColor);
+    max-width: 500px; /* Torna responsivo */
+    width: 100%; /* Adapta a largura */
+    padding: 20px;
 }
 
 .cards-collection {
     display: flex;
-   
     gap: 30px;
-  
+    flex-wrap: wrap; /* Garante que os itens não ultrapassem a tela */
+    justify-content: center;
 }
 
 .date {
@@ -74,37 +69,21 @@ padding: 20px;
     font-size: 25px;
 }
 
-
-@media screen and (max-width:800px) {
+/* Media Query para telas menores */
+@media screen and (max-width: 800px) {
     body {
-        background-size:auto;
-      width: 100vw;
-      
-    }
-    .cards-collection {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .card {
-        width: 600px;
+        background-size: auto;
     }
 }
 
-@media screen and (max-width:450px) {
-    body {
-        background-size:auto;
-      width: 100vw;
-      
+@media screen and (max-width: 450px) {
+    .title h1 {
+        font-size: 4rem; /* Reduz o tamanho do título */
     }
-    .cards-collection {
-        flex-wrap: wrap;
-        justify-content: center;
+    .title .month {
+        font-size: 2.5rem; /* Ajusta o texto do mês */
     }
-
     .card {
-        width: 400px;
+        max-width: 400px; /* Reduz largura das cards */
     }
 }
-
-
