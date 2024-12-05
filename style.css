@@ -29,7 +29,7 @@ body {
     background-image: var(--bg);
     background-repeat: no-repeat; 
     background-position: center; 
-    background-size: cover; 
+    background-size: auto; 
     min-height: 100vh;
 }
 
@@ -78,12 +78,12 @@ body {
 }
 
 .cards-collection {
-    margin-top: 20px;
+
     display: flex;
     gap: 30px;
     flex-wrap: wrap; /* Garante que os itens não ultrapassem a tela */
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 .date {
@@ -201,7 +201,7 @@ gap: 6px;
     }
 
     .title .month {
-        font-size: 2.4rem; /* Ajusta o texto do mês */
+        font-size: 2.7rem; /* Ajusta o texto do mês */
        top: 160px;
 
 
@@ -221,7 +221,7 @@ gap: 6px;
         font-size: 4rem; /* Reduz o tamanho do título */
     }
     .title .month {
-        font-size: 2.2rem; /* Ajusta o texto do mês */
+        font-size: 2.3rem; /* Ajusta o texto do mês */
        top: 110px;
     }
     .card {
