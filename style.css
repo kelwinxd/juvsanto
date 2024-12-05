@@ -2,10 +2,22 @@
     --cardColor: #eeef;
     --textColor: #212121;
     --bg: url('./assets/backbg.png');
+    /* Sublinhado cores */
+    --sub1: #ffc9c9;
+
+
 }
 
+@font-face {
+    font-family: 'Brittany';
+    src: url('./BrittanySignature.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 html, body {
-    height: 100%; 
+    height: 150%; 
     margin: 0; 
     padding: 0;
     overflow-x: hidden
@@ -51,16 +63,20 @@ body {
     font-size: 4rem;
     color: #fff;
     z-index: 1000;
+    font-family: "Brittany", sans-serif;
+    font-weight: 600;
 }
 
 .card {
     background-color: var(--cardColor);
     width: 500px; /* Torna responsivo */
 
-    padding: 20px;
+    padding: 10px 25px;
+    border-radius: 10px;
 }
 
 .cards-collection {
+    margin-top: 20px;
     display: flex;
     gap: 30px;
     flex-wrap: wrap; /* Garante que os itens não ultrapassem a tela */
@@ -68,10 +84,97 @@ body {
 }
 
 .date {
-    display: flex;
-    gap: 15px;
+    
+    line-height: 0;
+
+    text-align: center;
+}
+
+.day-number {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.day-name {
     font-size: 25px;
 }
+
+.event-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 24px;
+}
+
+.hour {
+    display: flex;
+    gap: 8px;
+}
+
+.event {
+background-color: var(--sub1);
+padding: 6px;
+border-radius: 6px;
+}
+
+.local {
+    font-size: 24px;
+    display: flex;
+    gap: 8px;
+}
+
+.grupo {
+    line-height: 0;
+    margin-top: 50px;
+}
+
+.title-whats {
+    font-family: "Brittany", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+.call {
+    font-size: 24px;
+    color: #fff;
+}
+
+.btn-grupo {
+    border: none;
+    background-color: green;
+    font-size: 40px;
+    margin-top: 50px;
+    color: #fff;
+    display: flex;
+    gap: 8px;
+    padding: 20px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn-grupo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+
+.off {
+    height: 280px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+
 
 /* Media Query para telas menores */
 @media screen and (max-width: 800px) {
@@ -86,6 +189,8 @@ body {
     .title .month {
         font-size: 2.1rem; /* Ajusta o texto do mês */
        top: 150px;
+
+
     }
     .card {
         width: 400px;
@@ -107,5 +212,16 @@ body {
     }
     .card {
         max-width: 350px; /* Reduz largura das cards */
+    }
+    .logo {
+       margin-inline: auto;
+       max-width: 500px;
+       display: flex;
+       justify-content: center;
+    }
+
+    .logo img {
+        width: 200px;
+    
     }
 }
