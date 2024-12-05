@@ -83,6 +83,7 @@ body {
     gap: 30px;
     flex-wrap: wrap; /* Garante que os itens não ultrapassem a tela */
     justify-content: center;
+    margin-top: 60px;
 }
 
 .date {
@@ -165,6 +166,7 @@ gap: 6px;
     padding: 20px 20px;
     border-radius: 15px;
     cursor: pointer;
+    text-align: center;
 }
 
 .btn-grupo a {
@@ -199,8 +201,8 @@ gap: 6px;
     }
 
     .title .month {
-        font-size: 2.1rem; /* Ajusta o texto do mês */
-       top: 150px;
+        font-size: 2.4rem; /* Ajusta o texto do mês */
+       top: 160px;
 
 
     }
@@ -219,7 +221,7 @@ gap: 6px;
         font-size: 4rem; /* Reduz o tamanho do título */
     }
     .title .month {
-        font-size: 2.1rem; /* Ajusta o texto do mês */
+        font-size: 2.2rem; /* Ajusta o texto do mês */
        top: 110px;
     }
     .card {
