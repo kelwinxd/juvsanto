@@ -16,10 +16,12 @@
     font-weight: normal;
     font-style: normal;
 }
-
+* {
+    box-sizing: border-box;
+ }
 
 html, body {
-    height: 150%; 
+    height: 100%; 
     margin: 0; 
     padding: 0;
     overflow-x: hidden
@@ -87,7 +89,10 @@ body {
 }
 
 .date {
-    
+    border: 1px solid #000;
+    width: 150px;
+    border-radius: 20px;
+    margin-inline: auto;
     line-height: 0;
 
     text-align: center;
@@ -99,7 +104,7 @@ body {
 }
 
 .day-name {
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .info {
@@ -110,26 +115,63 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
+    gap: 35px;
     font-size: 24px;
+    margin-top: 25px;
 
  
 }
 
+.contato-p {
+    font-size: 24px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    line-break:auto;
+    text-align: center;
+}
+
+.profile {
+    font-size: 24px;
+    width: 80%;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.info-profile {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-inline: auto;
+}
+
 .hour {
     display: flex;
+    flex: 1;
     gap: 8px;
 }
 
 .event {
-background-color: var(--sub1);
-padding: 6px;
-border-radius: 6px;
-max-width: 300px;
-display: flex;
-gap: 6px;
-}
-
+    background-color: var(--sub1);
+    flex: 1.5;
+    padding: 15px 10px;
+    border-radius: 6px;
+    display: flex;
+    text-align: center;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+  }
+  
 .local {
     font-size: 24px;
     display: flex;
@@ -154,6 +196,18 @@ gap: 6px;
     font-size: 24px;
     color: #fff;
     font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+    line-break: auto;
+    
+}
+
+footer {
+ width: 100%;
+ height: 70px;
+display: flex;
+justify-content: center;
+margin-top: 150px;
+
 }
 
 .btn-grupo {
@@ -177,7 +231,14 @@ gap: 6px;
 
 
 
-
+.title-contato {
+    font-size: 60px;
+    font-family: "Brittany", sans-serif;
+    font-weight: 600;
+    display: block;
+    color: #fff;
+    text-align: center;
+}
 
 
 .off {
@@ -188,6 +249,27 @@ gap: 6px;
     justify-content: center;
     font-size: 24px;
   
+}
+
+@media screen and (min-width:1200px){
+
+    .container {
+        max-width: 1100px;
+    }
+    .cards-collection {
+        width: 90%;
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap; /* Garante que os itens não ultrapassem a tela */
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+
+    .card {
+        width: 400px;
+        height:500px;
+        padding-top:10px;
+    }
 }
 
 
@@ -215,6 +297,10 @@ gap: 6px;
     .title-whats {
         font-size: 45px;
     }
+
+    .btn-grupo {
+        margin-left: 15px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -240,7 +326,7 @@ gap: 6px;
        top: 110px;
     }
     .card {
-        max-width: 350px; /* Reduz largura das cards */
+        max-width: 325px; /* Reduz largura das cards */
     }
     .logo {
        margin-inline: auto;
@@ -249,12 +335,31 @@ gap: 6px;
        justify-content: center;
     }
 
+    .call {
+       
+    }
+
     .logo img {
         width: 200px;
     
     }
 
+    .profile p{
+        font-size: 16px;
+    }
+
     .title-whats {
         font-size: 45px;
     }
+    .btn-grupo {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        max-width: 80%; /* Reduz largura das cards */
+    }
+
+
 }
