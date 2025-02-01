@@ -4,7 +4,7 @@
     --bg: url('./assets/backbg.png');
     /* Sublinhado cores */
     --sub1: #ffc9c9;
-    --sub2:#504396;
+    --sub2:#6f65a8;
     --sub3:#38c061;
 
 
@@ -135,6 +135,8 @@ body {
     font-family: "Poppins", sans-serif;
     line-break:auto;
     text-align: center;
+    width: 70%;
+    margin-inline: auto;
 }
 
 .profile {
