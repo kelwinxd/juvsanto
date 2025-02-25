@@ -4,8 +4,9 @@
     --bg: url('./assets/backbg.png');
     /* Sublinhado cores */
     --sub1: #ffc9c9;
-    --sub2:#6f65a8;
+    --sub2:#9086ca;
     --sub3:#38c061;
+    --sub4:#c9c61a;
 
 
 }
@@ -69,7 +70,7 @@ body {
     font-size: 4rem;
     color: #fff;
     z-index: 1000;
-    font-family: "Brittany", sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 600;
 }
 
@@ -188,6 +189,14 @@ body {
 .ev2{
     background-color: var(--sub2);
 } 
+
+.ev3 {
+    background-color: var(--sub4);
+}
+
+.ev4 {
+    background-color: var(--sub1);
+}
   
 .local {
     font-size: 24px;
@@ -378,6 +387,8 @@ margin-top: 150px;
     }
     .btn-grupo {
         margin-left: 10px;
+        font-size: 30px;
+        margin-inline: auto;
     }
 }
 
